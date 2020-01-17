@@ -13,14 +13,14 @@ const typeDefs = `
     allUser: [User]
   }
 
+  type Mutation {
+    createUser(input: UserInput): User
+  }
+
   input UserInput {
     name: String!
     age: Int!
     gender: String!
-  }
-
-  type Mutation {
-    createUser(input: UserInput): User
   }
 `;
 
